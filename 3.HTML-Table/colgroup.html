@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>colgroup Usage in Tables</title>
+    <style>
+        table{
+            
+            border-collapse: collapse;
+            caption-side: bottom;
+            width: 50%;
+            text-align: center;
+            
+        }
+        td{
+            border: 1px solid black;
+            
+        }
+    </style>
+</head>
+<body>
+    <h2>Let us draw 5*5 Table</h2>
+    <table>
+        <caption>Table with 5rows and columns</caption>
+        <tr>
+            <td>Col1</td>
+            <td>Col2</td>
+            <td>Col3</td>
+            <td>Col4</td>
+            <td>Col5</td>
+        </tr>
+        <tr>
+            <td>Col1</td>
+            <td>Col2</td>
+            <td>Col3</td>
+            <td>Col4</td>
+            <td>Col5</td>
+
+        </tr>
+        <tr>
+            <td>Col1</td>
+            <td>Col2</td>
+            <td>Col3</td>
+            <td>Col4</td>
+            <td>Col5</td>
+        </tr>
+        <tr>
+            <td>Col1</td>
+            <td>Col2</td>
+            <td>Col3</td>
+            <td>Col4</td>
+            <td>Col5</td>
+        </tr>
+        <tr>
+            <td>Col1</td>
+            <td>Col2</td>
+            <td>Col3</td>
+            <td>Col4</td>
+            <td>Col5</td>
+        </tr>
+    </table>
+
+    <h2>Apply Green Color to col1,col2,col3</h2>
+    <table>
+        <caption>Applying green color to col1,col2,col3 of table</caption>
+        <colgroup>
+            <col span="3" style="background-color: green;">
+        </colgroup>
+        <tr>
+            <td>Col1</td>
+            <td>Col2</td>
+            <td>Col3</td>
+            <td>Col4</td>
+            <td>Col5</td>
+        </tr>
+        <tr>
+            <td>Col1</td>
+            <td>Col2</td>
+            <td>Col3</td>
+            <td>Col4</td>
+            <td>Col5</td>
+
+        </tr>
+        <tr>
+            <td>Col1</td>
+            <td>Col2</td>
+            <td>Col3</td>
+            <td>Col4</td>
+            <td>Col5</td>
+        </tr>
+        <tr>
+            <td>Col1</td>
+            <td>Col2</td>
+            <td>Col3</td>
+            <td>Col4</td>
+            <td>Col5</td>
+        </tr>
+        <tr>
+            <td>Col1</td>
+            <td>Col2</td>
+            <td>Col3</td>
+            <td>Col4</td>
+            <td>Col5</td>
+        </tr>
+    </table>
+
+    <h2>Apply Yellow Color to col2,col3,col4</h2>
+    <table>
+        <caption>Applying yellow color to col2,col3,col4 of table</caption>
+        <colgroup>
+            <col span="1">
+            <col span="3" style="background-color: yellow;">
+        </colgroup>
+        <tr>
+            <td>Col1</td>
+            <td>Col2</td>
+            <td>Col3</td>
+            <td>Col4</td>
+            <td>Col5</td>
+        </tr>
+        <tr>
+            <td>Col1</td>
+            <td>Col2</td>
+            <td>Col3</td>
+            <td>Col4</td>
+            <td>Col5</td>
+
+        </tr>
+        <tr>
+            <td>Col1</td>
+            <td>Col2</td>
+            <td>Col3</td>
+            <td>Col4</td>
+            <td>Col5</td>
+        </tr>
+        <tr>
+            <td>Col1</td>
+            <td>Col2</td>
+            <td>Col3</td>
+            <td>Col4</td>
+            <td>Col5</td>
+        </tr>
+        <tr>
+            <td>Col1</td>
+            <td>Col2</td>
+            <td>Col3</td>
+            <td>Col4</td>
+            <td>Col5</td>
+        </tr>
+    </table>
+
+    <h2>Apply Red Color to col2,col4</h2>
+    <table>
+        <caption>Applying red color to col2,col4 of table</caption>
+        <colgroup>
+            <col span="1">
+            <col span="1" style="background-color: red;">
+            <col span="1">
+            <col span="1" style="background-color: red;">
+        </colgroup>
+        <tr>
+            <td>Col1</td>
+            <td>Col2</td>
+            <td>Col3</td>
+            <td>Col4</td>
+            <td>Col5</td>
+        </tr>
+        <tr>
+            <td>Col1</td>
+            <td>Col2</td>
+            <td>Col3</td>
+            <td>Col4</td>
+            <td>Col5</td>
+
+        </tr>
+        <tr>
+            <td>Col1</td>
+            <td>Col2</td>
+            <td>Col3</td>
+            <td>Col4</td>
+            <td>Col5</td>
+        </tr>
+        <tr>
+            <td>Col1</td>
+            <td>Col2</td>
+            <td>Col3</td>
+            <td>Col4</td>
+            <td>Col5</td>
+        </tr>
+        <tr>
+            <td>Col1</td>
+            <td>Col2</td>
+            <td>Col3</td>
+            <td>Col4</td>
+            <td>Col5</td>
+        </tr>
+    </table>
+
+    <h2>Hiding col5</h2>
+    <table>
+        <caption>Hiding column 5</caption>
+        <colgroup>
+            <col span="4">
+            <col span="1" style="visibility: collapse;">
+        </colgroup>
+        <tr>
+            <td>Col1</td>
+            <td>Col2</td>
+            <td>Col3</td>
+            <td>Col4</td>
+            <td>Col5</td>
+        </tr>
+        <tr>
+            <td>Col1</td>
+            <td>Col2</td>
+            <td>Col3</td>
+            <td>Col4</td>
+            <td>Col5</td>
+
+        </tr>
+        <tr>
+            <td>Col1</td>
+            <td>Col2</td>
+            <td>Col3</td>
+            <td>Col4</td>
+            <td>Col5</td>
+        </tr>
+        <tr>
+            <td>Col1</td>
+            <td>Col2</td>
+            <td>Col3</td>
+            <td>Col4</td>
+            <td>Col5</td>
+        </tr>
+        <tr>
+            <td>Col1</td>
+            <td>Col2</td>
+            <td>Col3</td>
+            <td>Col4</td>
+            <td>Col5</td>
+        </tr>
+    </table>
+
+    <h2>Hiding column2</h2>
+    <table>
+        <caption>Hiding col2</caption>
+        <colgroup>
+            <col span="1">
+            <col span="1" style="visibility: collapse;">
+        </colgroup>
+        <tr>
+            <td>Col1</td>
+            <td>Col2</td>
+            <td>Col3</td>
+            <td>Col4</td>
+            <td>Col5</td>
+        </tr>
+        <tr>
+            <td>Col1</td>
+            <td>Col2</td>
+            <td>Col3</td>
+            <td>Col4</td>
+            <td>Col5</td>
+
+        </tr>
+        <tr>
+            <td>Col1</td>
+            <td>Col2</td>
+            <td>Col3</td>
+            <td>Col4</td>
+            <td>Col5</td>
+        </tr>
+        <tr>
+            <td>Col1</td>
+            <td>Col2</td>
+            <td>Col3</td>
+            <td>Col4</td>
+            <td>Col5</td>
+        </tr>
+        <tr>
+            <td>Col1</td>
+            <td>Col2</td>
+            <td>Col3</td>
+            <td>Col4</td>
+            <td>Col5</td>
+        </tr>
+    </table>
+
+
+    
+</body>
+</html>
