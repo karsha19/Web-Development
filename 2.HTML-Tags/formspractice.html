@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms Practice</title>
+</head>
+<body>
+    <h2>Signup Form</h2>
+    <form action="/backend.php">
+        <label for="username">Username:</label>
+        <input type="text" id="username"><br><br>
+    
+        <label for="password">Password:</label>
+        <input type="password"  id="password"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email"><br><br>
+
+        <label for="color">Select your favourite Color:</label>
+        <input type="color" id="color"><br><br>
+
+        <label for="Date">Date of Birth:</label>
+        <input type="date" id="Date"><br><br>
+
+        <label for="myfile">Aadhaar document:</label>
+        <input type="file"  id="myfile"><br><br>
+
+        <label for="mypassedyear">Passed Out Year:</label>
+        <input type="year" id="mypassedyear"><br><br>
+
+        <label for="mymobile">Mobile Number:</label>
+        <input type="number" id="mymobile"><br><br>
+
+        <label for="myBranch">Branch:</label>
+        <select id="myBranch">
+            <option value="Select Branch">Select Branch</option>
+            <option value="Civil">Civil</option>
+            <option value="Mechanical">Mechanical</option>
+            <option value="CSE">CSE</option>
+            <option value="ECE">ECE</option>
+            <option value="EEE">EEE</option>
+
+        </select>
+        <br><br>
+
+        <p>Please select your favourite web language</p>
+        
+        <input type="radio" name="favourite" id="html" value="HTML">
+        <label for="html">HTML</label>
+        <input type="radio" name="favourite" id="css" value="CSS">
+        <label for="css">CSS</label>
+        <input type="radio" name="favourite" id="javascript" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+        <br>
+        
+        <label for="biography">Write few lines about you:</label><br>
+        <textarea  id="biography" cols="30" rows="5"></textarea><br><br>
+
+        <input type="submit" value="Submit Form">
+        <input type="reset" value="Reset Form">
+        
+
+    </form>
+    
+</body>
+</html>
