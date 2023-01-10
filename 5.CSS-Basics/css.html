@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Basics</title>
+    <style>
+        p{
+            color: blue;
+        }
+
+        .para{
+            color: red
+        }
+
+        #id_para{
+            color: brown;
+        }
+
+        button:hover{
+            color:pink;
+        }
+
+        table,tr,td{
+                border: 1px solid blueviolet;
+                border-collapse: collapse;
+                color: red;
+        }
+
+        *{
+            margin: 10px;
+        }
+
+        div{
+            color: red;
+        }
+
+        #div-box{
+            height: 100px;
+            width: 100px;
+            background-color: aqua;
+            padding: 20px;
+            margin: 50px;
+            border: 5px solid orange;
+        }
+    </style>
+</head>
+<body>
+    <h2>CSS</h2>
+    <p>CSS is known as Cascading Style Sheet. It gives appearance to webpage. It is used for styling, formatting webpage and makes webpage visually attractive</p>
+    <hr>
+
+    <h2>Selectors in CSS</h2>
+    <p>Selector is a way to select an element</p>
+    <ol>
+        <li>Simple Selector</li>
+        <ol>
+            <li>Element Selector</li>
+            <li>Class Selector</li>
+            <li>ID Selector</li>
+        </ol>
+        <li>Pseudo-class Selector</li>
+        <li>Multiple Selector</li>
+    </ol>
+    <hr>
+
+    <h3>Element Selector/Tag Selector/Type Selector</h3>
+    <p>CSS can select HTML elements by using an elements tag name.Tag name is the word between angle brackets</p>
+
+    <p>This is paragraph with p tag</p>
+
+    <pre>
+
+        &lt;p&gt; This is paragraph with p tag &lt;/p&gt;
+
+        &lt;style&gt;
+        
+        p{
+            color: blue;
+        }
+
+        &lt;style&gt;
+    </pre>
+    <hr>
+
+    <h3>Class Selector</h3>
+    <p>CSS is not limited to selecting elements by tag name. HTML elements can have attributes as well for tags. One common attribute is class attribute. It is possible to select element using class attribute.</p>
+    <p>To select HTML element by its class using CSS we need to prepend (.)before its class name</p>
+
+    <p class="para">This is paragraph with class attribute named as para</p>
+    <pre>
+        &lt;p class="para"&gt; This is paragraph with class attribute named as para &lt;/p&gt;
+
+        &lt;style&gt;
+           
+           .para{
+            color: red;
+           }
+
+        &lt;/style&gt;
+
+    </pre>
+
+    <hr>
+
+    <h3>ID Selector</h3>
+    <p>id is also one of the attributes available for tag. There will be unique id for a tag. there can be same class for multiple tags</p>
+    <p>In Css we can use ID attribute for styling by prepending (#)before idname</p>
+
+    <p id="id_para">This is paragraph with id attribute named id_para</p>
+
+    <pre>
+        &lt;p id="id_para"&gt;This is paragraph with id attribute named id_para&lt;/p&gt;
+
+        &lt;style&gt;
+           
+           #id_para{
+            color: brown;
+           }
+
+        &lt;/style&gt;
+
+    </pre>
+    <hr>
+
+    <h3>Pseudo-Class Selector</h3>
+    <p>A CSS Pseudo class is a keyword added to a selector that specifies a special state of the selected element. For example hover can be used to change a button's color when the user pointer hovers over it</p>
+    <p>This pseudo can be used with class and id attributes as well</p>
+    <a href="pseduo-class.html" target="_blank">Click here for learning more about special states of element</a><br>
+
+    <button>Submit</button>
+
+    <pre>
+        &lt;button&gt;Submit&lt;/button&gt;
+
+        &lt;style&gt;
+           
+           button:hover{
+            color: pink;
+           }
+
+        &lt;/style&gt;
+
+        
+    </pre>
+    <hr>
+
+    <h3>Multiple Selector/Grouping Selector</h3>
+    <p>If we want to add some style to all our headings,it will be difficult to write 6 rules for six different h tags. Instead we can achieve the same by writing single CSS rule with tags seperated by commas</p>
+
+    <table>
+        <tr>
+            <td>Month</td>
+            <td>Salary</td>
+        </tr>
+        <tr>
+            <td>January</td>
+            <td>1000</td>
+        </tr>
+        <tr>
+            <td>February</td>
+            <td>2000</td>
+        </tr>
+        <tr>
+            <td>March</td>
+            <td>3000</td>
+        </tr>
+        <tr>
+            <td>Total</td>
+            <td>6000</td>
+        </tr>
+    </table>
+
+    <pre>
+
+        &lt;style&gt;
+            table,tr,td{
+                border: 1px solid blueviolet;
+                border-collapse: collapse;
+                color: red;
+            }
+        &lt;/style&gt;
+
+    </pre>
+
+    <hr>
+
+    <h3>Universal Selector</h3>
+    <p>Universal selector provided by CSS helps in choosing any elements within HTML Page.</p>
+    <p>We have to use (*) symbol for denoting selector as universal selector</p>
+
+    <pre>
+        &lt;style&gt;
+            *{
+                margin: 10px;
+            }
+        &lt;/style&gt;
+    </pre>
+
+    <hr>
+
+    <h3>Nested Selector</h3>
+    <p>Like in HTML where we have elements nested inside another elements the same can be done in css.</p>
+    <p>Let's say you have a paragraph tag inside your main content and also one in your footer, but you want the footer's font size to be smaller.You can simply target paragraph tags inside main differently than you would paragraph tags inside footer by nesting the paragraph tag inside its parent.</p>
+
+    <pre>
+        &lt;style&gt;
+            main p{
+                font-size: 1rem;
+            }
+            footer p{
+                font-size: 0.75rem;
+            }
+        &lt;/style&gt;
+    </pre>
+
+    <hr>
+
+    <h2>How to add styling to HTML?</h2>
+    <ul>
+        <li>Inline CSS</li>
+        <li>Internal CSS</li>
+        <li>External CSS</li>
+    </ul>
+
+    <hr>
+
+    <h3>Inline CSS</h3>
+    <p>Inline CSS is styling within the opening tag with style attribute</p>
+
+    <p style="color: orange;">This para is styled using inline CSS</p>
+
+    <pre>
+        &lt;p style="color: orange"&gt;This para is styled using inline CSS&lt;/p&gt;
+    </pre>
+
+    <hr>
+
+    <h3>Internal CSS</h3>
+    <p>Internal CSS is styling of element using style element in head tag</p>
+
+    <div>
+        This was styled using internal css with color:red
+    </div>
+
+    <pre>
+        &lt;head&gt;
+            &lt;style&gt;
+                div{
+                    color: red;
+                }
+            &lt;/style&gt;
+        &lt;/head&gt;
+    </pre>
+
+    <hr>
+
+    <h3>External CSS</h3>
+    <p>When HTML and CSS code are in seperate files, then we need to link CSS file into HTML <br>We have to link tag in head element for linking External CSS</p>
+
+    <pre>
+        &lt;head&gt;
+            &lt;link rel="stylesheet" href="cssfile.css"&gt;
+        &lt;/head&gt;
+    </pre>
+
+    <hr>
+
+    <h2>Specificity</h2>
+    <p>Elements has multiple CSS selectors, so there is weight given to each type of selector.</p>
+    <p>Here is the logical order of selectors from highest to lowest weight</p>
+    <ol>
+        <li>!important</li>
+        <li>style attribute in inline CSS</li>
+        <li>ID CSS</li>
+        <li>Class CSS</li>
+        <li>Element CSS</li>
+
+    </ol>
+
+    <hr>
+
+    <h2>Box Model in CSS</h2>
+    <p>Box Model is basic building block of CSS</p>
+    <p>According to Box Model every element on page is a rectangular box and may have width,height,padding,border and margin</p>
+
+
+    <div id="div-box">Let us look at this para using box model</div>
+
+    <hr>
+
+    <h2>Colors in CSS</h2>
+    <p>Colors in CSS can be specified by following methods</p>
+    <ul>
+        <li>Hexadecimal colors</li>
+        <li>RGB colors</li>
+        <li>Predefined/Cross-browser color names</li>
+    </ul>
+    <hr>
+
+    <h3>Hexadecimal Colors</h3>
+    <p>Hexadecimal color is specified with #RRGGBB where RR(red), GG(green) and BB(blue) hexadecimal integers specify the components of color. All the values must be between 00 and FF</p>
+    <ul>
+        <li>#FF0000: Red</li>
+        <li>#00FF00: Green</li>
+        <li>#0000FF: Blue</li>
+    </ul>
+    <hr>
+
+    <h3>RGB Colors</h3>
+    <p>An RGB Color is specified with rgb() function, which has the following syntax rgb(red,green,blue)</p>
+    <ul>
+        <li>rgb(0,0,255): Blue</li>
+        <li>rgb(0,255,0): Green</li>
+        <li>rgb(255,0,0): Red</li>
+        <li>rgb(255,255,255): White</li>
+        <li>rgb(0,0,0): Black</li>
+    </ul>
+    <hr>
+
+    <h3>Predefined Colors</h3>
+    <p>Around 140 color names are predefined in HTML and CSS color specification</p>
+    <hr>
+
+    <h2>Units in CSS</h2>
+    <ol>
+        <li>Absolute Unit</li>
+        <li>Percentage Unit</li>
+        <li>Relative Unit</li>
+        <ol>
+            <li>Relative to font size</li>
+            <li>Relative to Document</li>
+        </ol>
+    </ol>
+
+    <hr>
+    <h3>Absolute Unit</h3>
+    <p>mm,cm,px,inch</p>
+    <p>1 px =1/96 of inch</p>
+    <hr>
+    <h3>Percentage Unit</h3>
+    <p>It will tell percentage of parent element</p>
+    <p>Let us say we have div tag of width 500px and we have nested one more div2 tag inside it and specified width as 20%. It means the width of div2 element is 100 px </p>
+    <hr>
+    <h3>Relative to font-size</h3>
+    <p>em - relative to parent font-size</p>
+    <p>rem - relative to root element font-size</p>
+    <hr>
+    <h3>Relative to viewport</h3>
+    <p>1vw is 1% of total width of document</p>
+    <p>1vh is 1% of total height of document</p>
+
+    
+
+    
+</body>
+</html>

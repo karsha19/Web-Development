@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-class</title>
+
+    <style>
+        a:hover{
+            color: blueviolet;
+        }
+        a:visited{
+            color: green;
+        }
+        a:link{
+            color: red;
+        }
+        a:active{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>What are pseudo classes?</h1>
+    <p>A pseudo-class is used to define a special state of an element</p>
+
+    <p>For example, pseudo class can be used to: </p>
+
+    <ul>
+        <li>Style an element when an user hovers about it</li>
+        <li>Style visited and unvisited links with different color</li>
+        <li>Style an element when it get focus</li>
+    </ul>
+
+    <h2>Syntax of pseudo-class</h2>
+    <pre>
+        
+        selector:pseudo-class {
+        property: value;
+      }
+
+    </pre>
+    <h2>Usage Examples</h2>
+    <pre>
+        /* unvisited link */
+        a:link {
+          color: red;
+        }
+        
+        /* visited link */
+        a:visited {
+          color: green;
+        }
+        
+        /* mouse over link */
+        a:hover {
+          color: pink;
+        }
+        
+        /* selected link */
+        a:active {
+          color: blue;
+        }
+
+
+    </pre>
+
+    <a href="css.html" target="_blank">Click here for main page</a>
+    <a href="https://www.linkedin.com" target="_blank">Click here for LinkedIn</a>
+    
+</body>
+</html>
