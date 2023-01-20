@@ -1,0 +1,76 @@
+.box{
+    border: 1px solid black;
+    width: 500px;
+    height: 500px;
+    background-image: linear-gradient(to right,rgb(159, 159, 232),white );
+    background-image: linear-gradient(to left, blue,white);
+    background-image: linear-gradient(to top,red,white);
+    background-image: linear-gradient(to bottom, red,black);
+    background-image: linear-gradient(to bottom right,blue,white);
+    background-image: linear-gradient(to bottom,orange,white,green);
+
+
+}
+
+.rad-grad{
+    margin: 20px;
+    border: 1px solid black;
+    height: 400px;
+    width: 500px;
+    text-align: center;
+    position: relative;
+    
+    background-image: radial-gradient(red,blue);
+    background-image: radial-gradient(orange,white,green);
+    background-image: radial-gradient(orange 10%,white 30%,green 60%);
+
+}
+
+.con-grad{
+    margin: 10px;
+    border: 10px solid black;
+    height:500px;
+    width:500px;
+    background-image: conic-gradient(red,yellow,green);
+    background-image: conic-gradient(from 60deg,orange 210deg,white,green);
+
+
+}
+
+.myhw{
+    margin-top: 20px;
+    position: relative;
+    top: 0px;
+    border: 1px solid black;
+    width: 250px;
+    height: 250px;
+
+}
+
+#top-left{
+    color:blue;
+    position: relative;
+    left: 0px;
+    top: -15px;
+
+}
+
+#top-right{
+    color:brown;
+    position: relative;
+    left:215px;
+    top:-50px;
+}
+#bottom-left{
+    color: red;
+    position: relative;
+    left:0px;
+    top:150px;
+}
+
+#bottom-right{
+    color:orange;
+    position: relative;
+    left:215px;
+    top:115px;
+}
