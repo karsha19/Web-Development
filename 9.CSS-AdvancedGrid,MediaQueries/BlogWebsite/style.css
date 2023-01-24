@@ -1,0 +1,28 @@
+.container{
+    height:500px;
+    width: 50%;
+    background-color: yellow;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);   
+    grid-template-rows: 50px 1fr 50px;
+    grid-gap:2px
+   
+}
+
+.box{
+    background-color: aqua;
+    border: 2px solid red;
+}
+
+#header{
+    grid-area: 1/1/2/4;
+}
+
+#content{
+    grid-area:2/2/3/4;
+}
+
+#footer{
+    grid-area: 3/1/4/4;
+}
