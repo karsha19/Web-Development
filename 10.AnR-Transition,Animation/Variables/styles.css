@@ -1,0 +1,32 @@
+/* *{
+    --my-color:rgb(77, 179, 77);
+
+} */
+
+/* Global scope for variable using :root */
+:root{
+    --my-color:rgb(77, 179, 77);
+
+}
+
+.container{
+    border: 1px solid black;
+    /* --my-color:rgb(77, 179, 77);  localvariable */
+    background-color: var(--my-color);  
+    height: 300px;
+    width: 300px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: repeat(2,1fr);
+    grid-gap: 4px;
+    padding: 10px;
+
+}
+
+.box{
+    
+    border: 2px solid salmon;
+    color: var(--my-color);
+    font-size: xx-large;
+    background-color: beige;
+}
